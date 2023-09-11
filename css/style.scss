@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Mono", monospace;
+  color: #fff;
+}
+body {
+  width: 100%;
+  background-color: rgb(10, 10, 75);
+  .wrapper {
+    width: 730px;
+    margin: 0 auto;
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      height: 80px;
+      margin-bottom: 36px;
+      .main-icon {
+        font-size: 26px;
+        font-weight: 700;
+        letter-spacing: 0px;
+        color: #fff;
+        cursor: default;
+      }
+      .morph__section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90px;
+        height: 20px;
+        span {
+          font-size: 13px;
+          font-weight: 700;
+          letter-spacing: 2.5px;
+          color: #fff;
+        }
+        img {
+          cursor: pointer;
+        }
+        .nonactive {
+          display: none;
+        }
+      }
+    }
+    .search__section {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      gap: 20px;
+      width: 100%;
+      height: 70px;
+      border-radius: 12px;
+
+      margin-bottom: 20px;
+      background-color: #1e2a47;
+      .search__section-input {
+        width: 450px;
+        padding: 10px;
+        border: 0;
+        font-size: 18px;
+        font-weight: 400;
+        background-color: #1e2a47;
+        color: #fff;
+
+        &:focus {
+          outline: 0;
+          border: 0;
+        }
+      }
+      .search__section-btn {
+        width: 106px;
+        height: 50px;
+        border-radius: 12px;
+        border: 0;
+        background-color: #0079ff;
+        font-weight: 700;
+        color: #fff;
+        cursor: pointer;
+      }
+    }
+    main {
+      display: flex;
+      justify-content: center;
+      gap: 89px;
+      width: 100%;
+      .user-avatar {
+        width: 117px;
+        height: 117px;
+        border-radius: 50%;
+      }
+      .user__data {
+        width: 480px;
+        height: 300px;
+        .user__data-info {
+          display: flex;
+          justify-content: space-between;
+          align-items: start;
+          width: 100%;
+          margin-bottom: 40px;
+          .about-user {
+            width: 190px;
+            .user-name {
+              font-size: 26px;
+              font-weight: 700;
+              margin-bottom: 6px;
+            }
+            .user-nickname {
+              font-weight: 400;
+              text-decoration: none;
+              color: #0079ff;
+            }
+            .user-bio {
+              font-size: 18px;
+              font-weight: 400;
+              margin-top: 24px;
+            }
+          }
+          .user-join-date {
+            height: 32px;
+            padding-top: 6px;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 22px;
+          }
+        }
+        .user-relation {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 80px;
+          width: 100%;
+          height: 85px;
+          border-radius: 8px;
+          background-color: #141d2f;
+          margin-bottom: 39px;
+          .user-rel {
+            .user-rel-i {
+              font-size: 13px;
+            }
+            .user-rel-n {
+              font-size: 22px;
+            }
+          }
+        }
+
+        .user__activity {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+          gap: 20px;
+          width: 100%;
+          .user__activity-item {
+            width: 220px;
+            height: 30px;
+            i {
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
